@@ -1,0 +1,26 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" rx="60" fill="#1E40AF" opacity="0.1"/>
+  
+  <!-- Book Base -->
+  <rect x="30" y="35" width="60" height="50" rx="4" fill="#1E40AF" opacity="0.2"/>
+  
+  <!-- Book Pages -->
+  <path d="M35 40H85V80C85 82.2091 83.2091 84 81 84H39C36.7909 84 35 82.2091 35 80V40Z" fill="white"/>
+  
+  <!-- Book Spine -->
+  <rect x="30" y="35" width="5" height="50" rx="1" fill="#1E40AF"/>
+  
+  <!-- Book Cover -->
+  <path d="M35 40V80C35 82.2091 36.7909 84 39 84H81C83.2091 84 85 82.2091 85 80V40H35Z" stroke="#1E40AF" stroke-width="2"/>
+  
+  <!-- Text Lines -->
+  <line x1="45" y1="50" x2="75" y2="50" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="45" y1="60" x2="75" y2="60" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="45" y1="70" x2="65" y2="70" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Graduation Cap -->
+  <path d="M60 25L40 35L60 45L80 35L60 25Z" fill="#1E40AF"/>
+  <path d="M75 38V50" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M60 45V55" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/>
+  <path d="M50 52C50 52 55 58 60 58C65 58 70 52 70 52" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"/>
+</svg>

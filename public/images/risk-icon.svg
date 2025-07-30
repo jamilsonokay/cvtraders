@@ -1,0 +1,20 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" rx="60" fill="#1E40AF" opacity="0.1"/>
+  
+  <!-- Shield Base -->
+  <path d="M60 20L30 35V60C30 78.75 43.125 90 60 100C76.875 90 90 78.75 90 60V35L60 20Z" fill="#1E40AF" opacity="0.2"/>
+  
+  <!-- Shield Outline -->
+  <path d="M60 95C75 85.5 85 75 85 60V38.75L60 26.25L35 38.75V60C35 75 45 85.5 60 95Z" stroke="#1E40AF" stroke-width="3" stroke-linejoin="round"/>
+  
+  <!-- Percentage Symbol -->
+  <circle cx="50" cy="55" r="8" fill="#1E40AF"/>
+  <circle cx="70" cy="65" r="8" fill="#1E40AF"/>
+  <path d="M45 70L75 50" stroke="#1E40AF" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Calculator Elements -->
+  <rect x="45" y="40" width="30" height="5" rx="1" fill="white"/>
+  <rect x="45" y="50" width="30" height="5" rx="1" fill="white"/>
+  <rect x="45" y="60" width="30" height="5" rx="1" fill="white"/>
+  <rect x="45" y="70" width="30" height="5" rx="1" fill="white"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="200" height="40" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 8H15C17.7614 8 20 10.2386 20 13V13C20 15.7614 17.7614 18 15 18H10V8Z" fill="white"/>
+  <path d="M10 20H15C17.7614 20 20 22.2386 20 25V25C20 27.7614 17.7614 30 15 30H10V20Z" fill="white"/>
+  <path d="M25 8H30V30H25V8Z" fill="white"/>
+  <path d="M35 8H40V25H45V30H35V8Z" fill="white"/>
+  <path d="M50 8H55V30H50V8Z" fill="white"/>
+  <path d="M60 8H65V17L70 8H75L70 17L75 30H70L67 22L65 25V30H60V8Z" fill="white"/>
+  <path d="M80 8H85V30H80V8Z" fill="white"/>
+  <path d="M90 8H95V30H90V8Z" fill="white"/>
+  <path d="M100 8H105V17H110V8H115V30H110V22H105V30H100V8Z" fill="white"/>
+  <path d="M120 8H135V13H125V16H130V21H125V25H135V30H120V8Z" fill="white"/>
+  <path d="M140 8H145V25H150V30H140V8Z" fill="white"/>
+  <path d="M155 8H160V25H165V30H155V8Z" fill="white"/>
+  <path d="M170 8H175V30H170V8Z" fill="white"/>
+  <path d="M180 8H185V17H188V8H193V30H188V22H185V30H180V8Z" fill="white"/>
+</svg>
