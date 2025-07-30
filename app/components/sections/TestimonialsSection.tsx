@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
 
 const testimonials = [
   {
@@ -113,7 +112,7 @@ const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="py-24 bg-black">
       <div className="container mx-auto px-4">
-                {/* Premium Risk Warning */}
+        {/* Premium Risk Warning */}
         <motion.div
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -122,66 +121,60 @@ const TestimonialsSection = () => {
           className="max-w-4xl mx-auto mb-16"
         >
           <div className="bg-gradient-to-r from-red-900/30 to-red-800/30 backdrop-filter backdrop-blur-lg rounded-xl p-8 border border-red-500/30 shadow-2xl">
-            <div className="flex flex-col md:flex-row items-center gap-6">
-              {/* Logo */}
+            <div className="flex items-center gap-6">
+              {/* Warning Icon */}
               <div className="flex-shrink-0">
                 <div className="w-16 h-16 md:w-20 md:h-20 bg-red-600/20 rounded-full flex items-center justify-center border border-red-500/40">
-                  <Image
-                    src="/CV-TRADERS-LOGO.svg"
-                    alt="CV Traders Logo"
-                    width={40}
-                    height={40}
-                    className="filter brightness-0 invert"
-                  />
+                  <svg className="w-8 h-8 md:w-10 md:h-10 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                  </svg>
                 </div>
               </div>
               
               {/* Warning Content */}
-              <div className="flex-1 text-center md:text-left">
-                <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
-                  <svg className="w-6 h-6 text-red-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-                  </svg>
-                  <h3 className="text-xl md:text-2xl font-bold text-red-400">AVISO DE RISCO IMPORTANTE</h3>
-                </div>
-                
-                <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-4">
-                  O trading envolve riscos significativos e pode não ser adequado para todos os investidores. 
-                  <strong className="text-red-300"> Você pode perder todo o capital investido. </strong> 
-                  As informações fornecidas não constituem aconselhamento financeiro.
-                  <br></br>Leia atentamente os Termos e Condições e o Aviso de Risco. Não há garantias de lucros. O desempenho passado não é indicativo de resultados futuros.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-                  <a 
-                    href="https://deriv.com/terms-and-conditions/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-red-600/20 hover:bg-red-600/30 border border-red-500/40 rounded-lg text-red-300 hover:text-red-200 transition-all duration-300 text-sm font-medium"
-                  >
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                    Termos e Condições
-                  </a>
+              <div className="flex-1">
+                <div className="text-center">
+                  <h3 className="text-xl md:text-2xl font-bold text-red-400 mb-4">AVISO DE RISCO IMPORTANTE</h3>
                   
-                  <a 
-                    href="https://deriv.com/regulatory/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-red-600/20 hover:bg-red-600/30 border border-red-500/40 rounded-lg text-red-300 hover:text-red-200 transition-all duration-300 text-sm font-medium"
-                  >
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                    </svg>
-                    Aviso de Risco
-                  </a>
+                  <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-6">
+                    O trading envolve riscos significativos e pode não ser adequado para todos os investidores. 
+                    <strong className="text-red-300"> Você pode perder todo o capital investido. </strong> 
+                    As informações fornecidas não constituem aconselhamento financeiro.
+                    <br /><br />
+                    Leia atentamente os Termos e Condições e o Aviso de Risco. Não há garantias de lucros. O desempenho passado não é indicativo de resultados futuros.
+                  </p>
+                  
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                    <a 
+                      href="https://deriv.com/terms-and-conditions/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-red-600/20 hover:bg-red-600/30 border border-red-500/40 rounded-lg text-red-300 hover:text-red-200 transition-all duration-300 text-sm font-medium"
+                    >
+                      <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                      Termos e Condições
+                    </a>
+                    
+                    <a 
+                      href="https://deriv.com/regulatory/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-red-600/20 hover:bg-red-600/30 border border-red-500/40 rounded-lg text-red-300 hover:text-red-200 transition-all duration-300 text-sm font-medium"
+                    >
+                      <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                      Aviso de Risco
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </motion.div>
-
+        
         <motion.div
           ref={ref}
           initial="hidden"
